@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-header {
+    background: #fff;
+    padding: 12px 3%;
+    border-bottom: 1px solid #f0f0f0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styling  */
+.main-logo {
+    height: 45px; /* লোগোর সাইজ এখান থেকে ছোট-বড় করতে পারবেন */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Navigation Links & Search */
+.nav-links-center {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+
+.nav-item:hover, .nav-item.active {
+    color: #f36f21; /* [cite: 2] */
+}
+
+.nav-item.active {
+    border-bottom: 2px solid #f36f21;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    background: #f1f3f4;
+    padding: 6px 15px;
+    border-radius: 25px;
+    margin-left: 10px;
+}
+
+.nav-search input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 160px;
+    font-size: 13px;
+}
+
+/* Header Right Icons  */
+.header-right {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    color: #555;
+}
+
+.icon-item {
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+
+.icon-item i {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.icon-item:hover { color: #f36f21; }
+
+/* Notification Badge  */
+.notify-badge {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    height: 8px;
+    width: 8px;
+    background-color: #ff4d4d;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.profile-img {
+    width: 32px;
+    height: 32px;
+    background: #e0e0e0;
+    border-radius: 50%;
+}
+
+/* Content Layout  */
+.content-wrapper {
+    padding: 40px 3%;
+}
+
+.marketplace-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.title-section h1 { font-size: 24px; color: #222; margin-bottom: 5px; }
+.title-section p { font-size: 14px; color: #888; }
+
+.categories-section {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-item {
+    text-decoration: none;
+    padding: 8px 18px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 13px;
+    color: #555;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.filter-item:hover { background: #f9f9f9; }
+
+.filter-item.active {
+    background: #1a2b4a; /*  */
+    color: #fff;
+    border-color: #1a2b4a;
+}
